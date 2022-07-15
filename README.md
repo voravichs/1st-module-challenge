@@ -22,4 +22,11 @@ header
 
 main
 
-    
+    There were 3 redundant classes, "search-engine-optimization," "online-reputation-management," and "social-media-marketing" that had the same CSS code in each. Thus, all three were replaced with one class, "section-style," truncating the CSS.
+    <div> tags containing the id for the earlier navigation links to reference and the "section-style" class were replaced with the <article> tag, as each section could stand alone.
+
+aside
+
+    Once again, the "benefit-lead," "benefit-brand," and "benefit-cost" classes have redundant CSS. The will all be consolidated into the "sidebar-style" class.
+    Chronologically, the <aside> code is after the <main> code. Thus, the "sidebar-style" CSS code will be moved to be after the "section-style" CSS code.
+    Each <div> in the sidebar can be replaced with the <section> tag, as these items could stand alone. Arguably, <article> could work as well, as each heading, paragraph, and image could stand alone, but without proper whitespace boundaries between each, <section> may fit better.
