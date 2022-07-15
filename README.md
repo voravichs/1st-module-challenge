@@ -9,7 +9,7 @@ In the end, the final product is a more accessible html with proper alt tags on 
 
 This section details the procedure of refactoring the code, and the reasons I had behind each decision. Major changes are tracked here, smaller changes such as indentation and spacing are not discussed here.
 
-# body 
+### body 
     I began from the first children of the <body> tag first, replacing the <div>s with proper 
     semantic HTML tags.
 
@@ -35,7 +35,7 @@ This section details the procedure of refactoring the code, and the reasons I ha
     The last sibling <div> was the one with the "footer" class. This will be replaced with the 
     proper <footer> tag. The "footer" class will be changed to <footer> tags in CSS.
 
-# header
+### header
 
     Firstly, proper <nav> tags replaced the <div> tags containing the list of navigation 
     elements.
@@ -46,7 +46,7 @@ This section details the procedure of refactoring the code, and the reasons I ha
     has an href with a # to an id in <main>. Thus, an id for "search engine optimization" was 
     added there.
 
-# main
+### main
 
     There were 3 redundant classes, "search-engine-optimization," 
     "online-reputation-management" and "social-media-marketing" that had the same CSS code in 
@@ -55,10 +55,10 @@ This section details the procedure of refactoring the code, and the reasons I ha
     <div> tags containing the id for the earlier navigation links and the "section-style" class 
     were replaced with the <article> tag, as each section could stand alone.
 
-# aside
+### aside
 
     Once again, the "benefit-lead," "benefit-brand," and "benefit-cost" classes have redundant 
-    CSS. The will all be consolidated into the "sidebar-style" class.
+    CSS. They will all be consolidated into the "sidebar-style" class.
     
     Chronologically, the <aside> code is after the <main> code. Thus, the "sidebar-style" CSS 
     code will be moved to be after the "section-style" CSS code.
@@ -68,7 +68,7 @@ This section details the procedure of refactoring the code, and the reasons I ha
     could stand alone, but without proper whitespace boundaries between each, <section> may fit 
     better.
 
-# general finishing touches
+### general finishing touches
 
     Alt text was added for all images. 
     Comments were added to all important sections of the HTML.
@@ -80,9 +80,7 @@ This section details the procedure of refactoring the code, and the reasons I ha
 
 ## Screenshot of Final Product
 
-    ```md
     ![full screenshot of the horiseon website](assets/images/fullscreencap.png)
-    ```
 
 ## Credits
 
