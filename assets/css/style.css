@@ -8,23 +8,24 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Used to exist a "header" class, now replaced with a header tag */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +33,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+header div ul {
     list-style-type: none;
 }
 
-.header div ul li {
+header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -50,13 +51,16 @@ p {
     font-size: 16px;
 }
 
-.hero {
-    height: 800px;
+/*"img-style" replaces the non-descriptive "hero" class. 
+    removed code pertaining to setting the image as a background image,
+    as the <img> tag in HTML sets the image. 
+    Height was set to fit-content for browser size compatibility, 
+    and to better fit with the mock-up. Previously, 800px cuts off
+    considerable amounts of the image.*/
+.img-style {
+    height: fit-content;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .float-left {
@@ -69,13 +73,13 @@ p {
     margin-left: 25px;
 }
 
-.content {
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -188,13 +192,13 @@ p {
     font-size: 36px;
 }
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
