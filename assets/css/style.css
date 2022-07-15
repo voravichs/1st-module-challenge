@@ -1,14 +1,22 @@
+/* === [GENERAL SETTINGS] === */
+/* All elements selector, sets initial padding, margin, 
+    and adds a border box to account for border and padding in 
+    setting widths and heights*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Styles the body to have a background of a certain color*/
 body {
     background-color: #d9dcd6;
 }
 
-/* Used to exist a "header" class, now replaced with a header tag */
+
+
+/* === [HEADER ELEMENTS] === /*
+/* Styles the padding, fonts, font color, and background color of the header */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,15 +24,22 @@ header {
     color: #ffffff;
 }
 
+/* Generates a block for header elements to all exist in, as well as set 
+    the font size for the header's heading, the site title*/
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Styles the <span> section of the Horiseo name, so that 
+    SEO is colored differently than the rest*/
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Styles the nav, such that the padding and margin centers the 
+    elements. The nav is then moved to the right of the header,
+    and given a specific font and font size.*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -33,6 +48,10 @@ nav {
     font-size: 20px;
 }
 
+/* ul and li set the styles of the list of nav elements.
+    Bullet points are removed, the list is displayed within the
+    inline-block from header h1, and a small margin is given to
+    each to give space between each navigation element*/
 ul {
     list-style-type: none;
 }
@@ -42,27 +61,71 @@ li {
     margin-left: 25px;
 }
 
+/* Links in the nav bar are colored white and given no distiction
+    from normal text.*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
 
-/*"img-style" replaces the non-descriptive "hero" class. 
-    removed code pertaining to setting the image as a background image,
-    as the <img> tag in HTML sets the image. 
-    Height was set to fit-content for browser size compatibility, 
-    and to better fit with the mock-up. Previously, 800px cuts off
-    considerable amounts of the image.*/
+
+/* === [FIGURE ELEMENTS] === */
+/* Styles the image such that the entire height the image fits 
+    on screen, while the width is kept bounded to the size of the 
+    browser window (100%). A small margin is added at the bottom
+    to add white space between sections.*/
 .img-style {
     height: fit-content;
     width: 100%;
     margin-bottom: 25px;
 }
 
+
+
+/* === [MAIN ELEMENTS] === */
+/* Styles the main section, giving it 75% of the page's width
+    (leaving 25% for the sidebar, see aside for more info)
+    An inline-block display is given, and a left margin to
+    add some white space.*/
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* The font size for the main paragraph text of the page*/
+p {
+    font-size: 16px;
+}
+
+/* The section style class styles each <article> in <main>
+    A bottom margin separates each article.
+    Padding and height center the text and images.
+    A font is specified, alongside the font color and background color.*/
+.section-style {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Images within <article> take up only 200 of the 300 px height.*/
+.section-style img {
+    max-height: 200px;
+}
+
+/* Headings in <article> are given a bottom margin and a larger font size.*/
+.section-style h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* float-left and float-right keep the images to the left or right
+    respectively within the parent element, <article>, and a 
+    margin in the same direction to separate the picture from the text.*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -74,12 +137,14 @@ p {
 }
 
 
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
+/* === [ASIDE ELEMENTS] === */
+/* Styles the sidebar <aside>. Gives a right margin for white space.
+    Sets the position of the sidebar so that it is to the right
+    of the main content of the page, taking up as much height as
+    the main content takes, minus padding. 
+    Gives the sidebar a unique background color and the same
+    font family as the main content.*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -91,26 +156,11 @@ aside {
     background-color: #2589bd;
 }
 
-
-
-.section-style {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.section-style img {
-    max-height: 200px;
-}
-
-.section-style h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+ /* Styles the content of the sidebar. Each <section> is given
+    a bottom margin to separate them. The headings are also given
+    a small bottom margin. and aligned to the center. 
+    The images are given a max width and margins such that they will
+    be centered on the sidebar.*/
 .sidebar-style {
     margin-bottom: 32px;
     color: #ffffff;
@@ -127,6 +177,11 @@ aside {
     max-width: 150px;
 }
 
+
+
+/* === [FOOTER ELEMENTS] === */
+/* Styles the footer, such that it does is centered at the bottom 
+    of the page without intersecting with the previous above sections.*/
 footer {
     padding: 30px;
     clear: both;

@@ -30,3 +30,9 @@ aside
     Once again, the "benefit-lead," "benefit-brand," and "benefit-cost" classes have redundant CSS. The will all be consolidated into the "sidebar-style" class.
     Chronologically, the <aside> code is after the <main> code. Thus, the "sidebar-style" CSS code will be moved to be after the "section-style" CSS code.
     Each <div> in the sidebar can be replaced with the <section> tag, as these items could stand alone. Arguably, <article> could work as well, as each heading, paragraph, and image could stand alone, but without proper whitespace boundaries between each, <section> may fit better.
+
+General
+
+    Added Alt text for all images
+    Added comments to differentiate parts of the body in HTML
+    Validated both CSS and HTML through their respective online validators
