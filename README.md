@@ -80,7 +80,7 @@ This section details the procedure of refactoring the code, and the reasons I ha
 
 ## Screenshot of Final Product
 
-    ![full screenshot of the horiseon website](assets/images/fullscreencap.png)
+![full screenshot of the horiseon website.](./assets/images/fullscreencap.png)
 
 ## Credits
 
@@ -91,4 +91,5 @@ I also referenced tutorials on https://www.w3schools.com/ to help in implementin
 ## Github Deployed Site Link and Repository Link
 
 Github Repository: https://github.com/voravichs/1st-module-challenge
+
 Github Pages Deployment: https://voravichs.github.io/1st-module-challenge/
