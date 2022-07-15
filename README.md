@@ -3,6 +3,7 @@
 ## Description
 
 This homework challenge dealt with refactoring working code to be more accessible. This involved adding semantic HTML tags to a messy set of "div" tags and subsequently changing CSS to reflect those changes. This work also involved fixing a broken link and changing the size of an image to fit the screen better. 
+
 In the end, the final product is a more accessible html with proper alt tags on the images, and a throughly-commented and organized CSS page that is shorter then the original in code, but longer in descriptions of each section for ease of use in editing styles in the future.
 
 ## Procedure & Thought Process
